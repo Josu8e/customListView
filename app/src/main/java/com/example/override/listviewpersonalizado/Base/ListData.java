@@ -4,9 +4,18 @@ package com.example.override.listviewpersonalizado.Base;
  * Created by Override on 16/10/2016.
  */
 public class ListData {
+    int id;
     String nombre;
     String descripcion;
     String precio;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;

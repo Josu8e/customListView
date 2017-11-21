@@ -1,14 +1,10 @@
 package com.example.override.listviewpersonalizado;
 
-import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import com.example.override.listviewpersonalizado.Base.BDHelper;
 
 public class Agregar extends AppCompatActivity {
     //BDHelper MyDB;
