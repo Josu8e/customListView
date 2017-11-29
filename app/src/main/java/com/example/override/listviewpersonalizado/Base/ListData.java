@@ -4,40 +4,59 @@ package com.example.override.listviewpersonalizado.Base;
  * Created by Override on 16/10/2016.
  */
 public class ListData {
-    int id;
-    String nombre;
-    String descripcion;
-    String precio;
+    String _id;
+    String name;
+    String description;
+    String price;
 
-    public int getId() {
-        return id;
+    public ListData(String name, String description, String price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public ListData() {
     }
 
-    public String getNombre() {
-        return nombre;
+    public String get_Id() {
+        return _id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void set_Id(String _id) {
+        this._id = _id;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getName() {
+        return name;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPrecio() {
-        return precio;
+    public String getDescription() {
+        return description;
     }
 
-    public void setPrecio(String precio) {
-        this.precio = precio;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "ListData{" +
+                "_id='" + _id + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price='" + price + '\'' +
+                '}';
     }
 }
